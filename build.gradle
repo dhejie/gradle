@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+}
+group 'com.he'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+//mavenLocal()
+//mavenCentral()
+//以上配置表示先从本地找依赖再从网上找
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+//    compile("org.springframework.boot:spring-boot-starter-web:2.1.6")
+}
+group 'com.he'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
