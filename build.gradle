@@ -1,3 +1,5 @@
+import javax.tools.JavaCompiler
+
 plugins {
     id 'java'
 }
@@ -29,4 +31,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    tasks.withType(JavaCompile){
+        options.encoding='UTF-8'
+    }
 }

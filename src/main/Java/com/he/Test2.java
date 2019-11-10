@@ -28,7 +28,11 @@ public class Test2 {
         list2.forEach(item-> System.out.println(item));
         //stream流的简单操作
         list.stream().map(item->item.toUpperCase()).forEach(item-> System.out.println(item+"---"));
-        list.stream().map(String::toUpperCase).forEach(item-> System.out.println(item+"+++++"));
+//        list.stream().map(String::toUpperCase).forEach(item-> System.out.println(item+"+++++"));
+        list.stream().map(String::toUpperCase).forEach(item-> list2.add(item+"+++"));
+        list2.forEach(item->{
+            System.out.println(item);
+        });
     }
 
 }
