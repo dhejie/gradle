@@ -29,6 +29,7 @@ public class Test1 {
                 System.out.println(integer);
             }
         });
+        //lambda写法
         list.forEach(u -> {
             System.out.println(u);
         });
